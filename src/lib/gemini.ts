@@ -8,7 +8,7 @@ if (!API_KEY) {
 
 // Initialize once and reuse
 const genAI = new GoogleGenerativeAI(API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-exp" });
 
 export async function getGeminiResponse(prompt: string): Promise<string> {
   try {
